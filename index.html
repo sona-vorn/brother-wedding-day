@@ -29,14 +29,12 @@
       margin: 0;
     }
 
-    /* Button position (UNCHANGED IDEA) */
     button {
       margin-top: -50%;
       position: relative;
       z-index: 5;
     }
 
-    /* Countdown overlay (ONLY for Home.png) */
     .countdown-box {
       position: absolute;
       top: 90%;       /* adjust up/down */
@@ -71,7 +69,6 @@
         font-size: 40px;
       }
     }
-    /* =====  GLOW BUTTON  ===== */
     .glow-btn {
       margin: 100px;
        padding: 15px 40px;
@@ -97,7 +94,6 @@
       border-radius: 10px;
 }
 
-/* glow */
     .glow-btn::before {
       content: "";
      background: linear-gradient(
@@ -143,7 +139,6 @@
 
 <body>
 
-  <!-- Image container -->
   <div style="position: relative;">
 
     <img id="myImage" src="Bunthoeun&Sina's day.png" width="100%">
@@ -164,7 +159,6 @@
   </center>
 
     <img id="myCountDownImage" src="Countdown.png" width="100%" hidden=true>
-    <!-- Countdown (ON Home.png ONLY) -->
     <div class="countdown-box" id="countdownBox">
       <div class="time" id="countdown">00 : 00 : 00 : 00</div>
       <div class="labels">
@@ -186,7 +180,6 @@
   <img id="myThanksImage" src="Thank You.png" width="100%" hidden=true>
 
   <script>
-    /* Keep your button logic */
     function changeImage() {
       document.getElementById("btnDetail").hidden = true;
       document.getElementById("btnLocation").hidden = false;
@@ -198,8 +191,7 @@
       document.getElementById("countdownBox").style.display = "block";
     }
 
-    /* Wedding Countdown */
-    const weddingDate = new Date("2026-01-31T06:30:00").getTime();
+    const weddingDate = new Date("2026-06-10T06:30:00").getTime();
 
     setInterval(() => {
       const now = new Date().getTime();
@@ -222,6 +214,7 @@
 
 </body>
 </html>
+
 
 
 
